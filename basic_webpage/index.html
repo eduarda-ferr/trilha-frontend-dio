@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esrutura HTML</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Estrutura HTML</h1>
+    <img src="https://www.hostinger.com.br/tutoriais/wp-content/uploads/sites/12/2018/07/Como-inserir-imagem-ou-logo-usando-HTML-no-seu-site-1.png" alt="imagem html com desenhos de estruturas">
+    <hr>
+   
+    <h2 id="indice">Índice</h2>
+    <ol>
+        <li><a href="#introducao">Introdução</a></li>
+        <li><a href="#formulario">Formulário</a></li>
+        <li><a href="#formatacao">Formatação</a></li>
+        <li><a href="#tabela">Tabelas</a></li>
+        <li><a href="#midia">Mídia</a></li>
+        <li><a href="#semantica">Semântica</a></li>
+    </ol>
+    <hr>
+
+    <div class="container">
+        <h3 id="introducao">Introdução</h3>
+        <small><a href="#indice">voltar</a></small>
+        <p> A introdução é baseada na estrutura básica em um documento HTML composto com as Tags principais como  dentro dela, suas demais como <code>&lt;html&gt;</code>, <code>&lt;head&gt;</code>, <code>&lt;title&gt;</code>, <code>&lt;body&gt;</code> e elementos de conteúdo como <code>&lt;header&gt;</code>.</p>
+
+        <ul>
+            <li><strong>Estrutura básica:</strong> <code>&lt;html&gt; &gt; &lt;head&gt; &gt; &lt;title&gt; &gt; &lt;body&gt; &gt; &lt;header&gt;</code>, entre outras.</li>
+
+            <li><strong>Títulos:</strong> <code>&lt;h1&gt;</code> até <code>&lt;h6&gt;</code> — representam títulos de diferentes níveis e tamanhos.</li>
+
+            <li><strong>Formatação de texto:</strong>
+            <ul><li><code>&lt;i&gt;</code>: deixa o texto em <i>itálico</i>.</li>
+                <li><code>&lt;strong&gt;</code>: deixa o texto em <strong>negrito</strong>.</li>
+                <li><code>&lt;mark&gt;</code>: destaca o texto como um <mark>marcador</mark>.</li>
+                <li><code>&lt;sup&gt;</code>: posiciona o texto como sobrescrito, exemplo: x<sup>2</sup>.</li>
+                <li><code>&lt;sub&gt;</code>: posiciona o texto como subscrito, exemplo: H<sub>2</sub>O.</li>
+                <li><code>&lt;blockquote&gt;</code>: insere uma citação em bloco, como: 
+                    <blockquote>“O conhecimento é poder.”</blockquote>
+                </li>
+            </ul>     
+        </ul>
+
+        <h3 id="formulario">Formulário</h3>
+        <small><a href="#indice">voltar</a></small>
+        <p>Nesta seção, aprofunda-se nos tipos de entrada em HTML, como base para criação de interfaces de cadastro de pesquisa.</p>
+
+        <h5>Tipos de entrada (<code>&lt;input&gt;</code>)</h5>
+        <ul>
+            <li><code>text</code>: campo de texto simples</li>
+            <li><code>number</code>: campo numérico</li>
+            <li><code>password</code>: campo de senha (caracteres ocultos)</li>
+            <li><code>email</code>: valida e coleta e-mails</li>
+            <li><code>url</code>: campo para links</li>
+            <li><code>radio</code>: seleção única entre várias opções</li>
+            <li><code>checkbox</code>: seleção múltipla</li>
+            <li><code>color</code>: seletor de cores</li>
+            <li><code>range</code>: controle deslizante</li>
+            <li><code>week</code>, <code>month</code>: seleção de semana e mês</li>
+        </ul>
+
+        <h5>Elementos e atributos do <code>&lt;form&gt;</code></h5>
+        <ul>
+            <li><code>action</code>: define para onde os dados serão enviados</li>
+            <li><code>method</code>: define o método de envio (<code>GET</code> ou <code>POST</code>)</li>
+            <li><code>name</code>: nome identificador do formulário</li>
+            <li><code>target</code>: define onde o resultado será exibido (por exemplo, <code>_blank</code>)</li>
+            <li><code>onsubmit</code>: executa uma ação ao enviar o formulário (como alertas)</li>
+            <li><code>autocomplete</code>: ativa/desativa sugestões de preenchimento automático</li>
+        </ul>
+
+        <h5>Outros elementos</h5>
+        <ul>
+            <li><code>&lt;select&gt;</code>: menu suspenso</li>
+            <li><code>&lt;textarea&gt;</code>: área para textos longos</li>
+            <li><code>&lt;button&gt;</code>: botão personalizável com os tipos <code>submit</code>, <code>button</code> e <code>reset</code></li>
+            <li><code>min</code> / <code>max</code>: definem limites de valor</li>
+            <li><code>disabled</code>: desativa o campo</li>
+            <li><code>name[]</code>: permite enviar múltiplos valores com o mesmo nome (útil em arrays)</li>
+            <li><code>selected</code>: define a opção padrão selecionada em <code>&lt;select&gt;</code></li>
+        </ul>
+
+        <h3 id="formatacao">Formatação</h3>
+        <small><a href="#indice">voltar</a></small>
+        <p>Proseguimos agora para a área de formatação de texto e organização de conteúdo.</p>
+
+        <h5>Tags principais de formatação</h5>
+        <ul>
+            <li><code>&lt;i&gt;</code>: deixa o texto em <i>itálico</i>.</li>
+            <li><code>&lt;b&gt;</code>: aplica <b>negrito simples</b>.</li>
+            <li><code>&lt;strong&gt;</code>: dá <strong>ênfase semântica</strong>, indicando importância.</li>
+            <li><code>&lt;u&gt;</code>: adiciona <u>sublinhado</u> ao texto.</li>
+            <li><code>&lt;mark&gt;</code>: destaca com <mark>marca-texto</mark>.</li>
+            <li><code>&lt;blockquote&gt;</code>: insere uma citação em bloco:
+                <blockquote>“Design é inteligência feita visível.”</blockquote>
+            </li>
+            <li><code>&lt;font&gt;</code>: (Deve ser evitada em projetos modernos.)</li>
+            <li><code>&lt;div&gt;</code> é usada para agrupar blocos de conteúdo e facilitar a organização da página.</li>
+            <li><code>&lt;span&gt;</code> é usada para aplicar estilo em trechos específicos de texto inline.</li>
+        </ul>
+
+        <h5>Novas tags e funcionalidades</h5>
+        <ul>
+            <li><code>&lt;fieldset&gt;</code>: agrupa elementos de um formulário.</li>
+            <li><code>&lt;legend&gt;</code>: fornece uma legenda para o <code>&lt;fieldset&gt;</code>.</li>
+            <li><code>&lt;label&gt;</code>: associa texto a um campo de formulário.</li>
+            <li><code>&lt;embed&gt;</code>: incorpora conteúdo multimídia (como vídeos ou PDFs).</li>
+            <li><code>&lt;iframe&gt;</code>: exibe outra página HTML dentro da atual.</li>
+        </ul>
+
+        <h5>Elementos CSS</h5>
+        <ul>
+            <li><strong>margin</strong>: espaçamento externo do elemento.</li>
+            <li><strong>padding</strong>: espaçamento interno entre conteúdo e borda.</li>
+            <li><strong>border-radius</strong>: arredonda os cantos das bordas.</li>
+            <li><strong>background-color</strong>: define a cor de fundo do elemento.</li>
+        </ul>
+
+        <h3 id="tabelas">Tabelas</h3>
+        <small><a href="#indice">Voltar</a></small>
+        <p>Esta seção aborda a criação e estruturação de tabelas, incluindo semântica e estilização com CSS.</p>
+
+        <h5>Estrutura semântica</h5>
+        <p>A tabela está dividida em três partes:</p>
+        <ul>
+            <li><code>&lt;thead&gt;</code>: cabeçalho, onde os títulos das colunas são definidos com <code>&lt;th&gt;</code>.</li>
+            <li><code>&lt;tbody&gt;</code>: corpo, com os dados organizados em <code>&lt;tr&gt;</code> (linhas) e <code>&lt;td&gt;</code> (colunas).</li>
+            <li><code>&lt;tfoot&gt;</code>: rodapé, usado para resumos ou totais.</li>
+        </ul>
+
+        <h5>Tags e atributos</h5>
+        <ul>
+            <li><code>&lt;caption&gt;</code>: nome da tabela.</li>
+            <li><code>colspan="2"</code>: uma célula ocupa duas colunas.</li>
+            <li><code>title</code>: mostra uma dica ao passar o mouse sobre o título.</li>
+            <li><code>cellspacing</code> e <code>cellpadding</code>: controlam espaçamento.</li>
+            <li><code>align</code> e <code>width</code>: alinhamento e largura.</li>
+        </ul>
+
+        <h5>Elementos CSS</h5>
+        <ul>
+            <li><strong>Sombra (box-shadow)</strong>: adiciona profundidade visual à tabela.</li>
+            <li><strong>Estilo para <code>&lt;thead&gt;</code> e <code>&lt;tfoot&gt;</code></strong>: cores de fundo diferenciadas.</li>
+            <li><strong>Zebragem</strong>: <code>nth-child(even)</code> destaca linhas pares.</li>
+            <li><strong>Hover</strong>: altera o fundo ao passar o mouse (<code>:hover</code>) e muda o cursor.</li>
+        </ul>
+
+        <p>Segue abixo, um exemplo de tabela:</p>
+        <table aria-label="tabela de nomes e idades" style="text-align:center;"cellpadding="22" >
+            <thead>
+                <tr>
+                    <th colspan="2" scope="col">Lista</th>
+                </tr>
+                <tr>
+                    <th scope="col" title="Nome completo">Nome</th>
+                    <th scope="col">Idade</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>Maria</td><td>20</td></tr>
+                <tr><td>Diogo</td><td>22</td></tr>
+                <tr><td>João</td><td>34</td></tr>
+                <tr><td>Tiago</td><td>27</td></tr>
+                <tr><td>Letícia</td><td>18</td></tr>
+            </tbody>
+            <tfoot>
+                <tr><td>Total</td><td>5</td></tr>
+            </tfoot>
+        </table>
+        
+        <h3 id="midia">Mídia</h3>
+        <small><a href="#indice">Voltar</a></small>
+        <p>Exploramos como inserir imagens, áudios e vídeos usando HTML5.</p>
+
+        <h5>Adição de imagens com <code>&lt;img&gt;</code></h5>
+        <p>É possível adicionar imagens de diferentes formatos, como <code>.gif</code>, <code>.png</code>, <code>.webp</code> e <code>.jpg</code>.</p>
+        <ul>
+            <li><code>src</code>: caminho da imagem</li>
+            <li><code>alt</code>: descrição alternativa (essencial para acessibilidade e SEO)</li>
+            <li><code>title</code>: dica exibida ao passar o mouse</li>
+        </ul>
+        <img src="universe-gif.gif" title="gif" alt="gif" width="400">
+        <img src="free-png.png" title="png" alt="png" width="400">
+        <img src="HTML-SVG.webp" title="webp" alt="webp" width="400">
+        <img src="horizonte-jpg.jpg" title="jpg" alt="jpg" width="400">
+
+        <h5>Áudio com <code>&lt;audio&gt;</code></h5>
+        <p>Para inserir áudio, usamos a tag <code>&lt;audio&gt;</code> com uma ou mais fontes <code>&lt;source&gt;</code>.</p>
+        <ul>
+            <li>Formatos recomendados: <code>.mp3</code>, <code>.ogg</code>, <code>.wav</code></li>
+            <li>O formato <code>.mkv</code> não é compatível com áudio em HTML5</li>
+            <!-- Seu navegador não suporta o elemento de áudio. -->
+        </ul>
+        <audio controls>
+            <source src="" type="audio/mp3">
+        </audio>
+
+        <h5>Vídeo com <code>&lt;video&gt;</code></h5>
+        <p>Vídeos podem ser incorporados usando a tag <code>&lt;video&gt;</code> com controles e trilhas de legenda.</p>
+        <ul>
+            <li><code>controls</code>: exibe os controles de reprodução</li>
+            <li><code>&lt;source&gt;</code>: define o arquivo de vídeo</li>
+            <li><code>&lt;track&gt;</code>: adiciona legenda ao vídeo (formato <code>.vtt</code>)</li>
+        </ul>
+        <video controls>
+            <source src="Adele - Skyfall video.mp4" type="video/mp4">
+            <track src="legenda.vtt" kind="captions" srclang="en" label="Inglês">
+        </video>
+
+        <h5>Vídeos incorporados com <code>&lt;iframe&gt;</code></h5>
+        <p>É possível incorporar vídeos de plataformas como exemplo, YouTube, usando <code>&lt;iframe&gt;</code>.</p>
+        <ul>
+            <li><code>src</code>: link do vídeo</li>
+            <li><code>allowfullscreen</code>: permite tela cheia</li>
+            <li><code>referrerpolicy</code> e <code>allow</code>: aumentam segurança e funcionalidades</li>
+        </ul>
+        <iframe width="460" height="315" src="https://www.youtube.com/embed/xdBWrkcmMwU?si=gpda9q9-NuUzXbu_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+        <h3 id="semantica">Semântica</h3>
+        <small><a href="#indice">Voltar</a></small>
+
+        <p>HTML semântico consiste o uso de tags com significado próprio, melhorando a organização do código.</p>
+
+        <h5>Estruturação</h5>
+        <ul>
+            <li><code>&lt;header&gt;</code>: define o cabeçalho da página ou seção.</li>
+            <li><code>&lt;nav&gt;</code>: agrupa links de navegação.</li>
+            <li><code>&lt;main&gt;</code>: representa o conteúdo principal da página (não deve estar dentro de <code>header</code> ou <code>footer</code>).</li>
+            <li><code>&lt;article&gt;</code>: representa um conteúdo independente e completo, como uma notícia ou post.</li>
+            <li><code>&lt;section&gt;</code>: agrupa conteúdos relacionados.</li>
+            <li><code>&lt;aside&gt;</code>: conteúdo complementar (ex: curiosidades, barras laterais).</li>
+            <li><code>&lt;footer&gt;</code>: rodapé com informações finais, como <code>&lt;address&gt;</code>.</li>
+        </ul>
+
+        <h5>Imagens e Ilustrações</h5>
+        <ul>
+            <li><code>&lt;figure&gt;</code>: agrupa uma imagem com sua legenda.</li>
+            <li><code>&lt;figcaption&gt;</code>: legenda explicativa da imagem.</li>
+            <li><code>&lt;picture&gt;</code> e <code>&lt;source&gt;</code>: permitem carregar diferentes imagens dependendo da largura da tela (responsividade).</li>
+            <li><code>alt</code>: atributo obrigatório para acessibilidade, descrevendo o conteúdo da imagem.</li>
+        </ul>
+
+        <h5>Estilização CSS</h5>
+        <ul>
+            <li><code>display: flex</code> no <code>nav</code>: alinha os itens da navegação em linha.</li>
+            <li><code>:hover</code> nos links: altera a cor e o fundo ao passar o mouse.</li>
+            <li><code>blockquote</code> com <code>border-left</code>, <code>background-color</code> e <code>color</code>: estilo visual para citações destacadas.</li>
+        </ul>
+
+        <h5>Outras Tags Semânticas</h5>
+
+        <h5><code>&lt;del&gt;</code> — Texto Removido</h5>
+        <p>Exemplo: <br>
+        <code>&lt;p&gt;Preço original: &lt;del&gt;R$ 100,00&lt;/del&gt; R$ 80,00&lt;/p&gt;</code><br>
+        Resultado: <p>Preço original: <del>R$ 100,00</del> R$ 80,00</p>
+        </p>
+
+        <h5><code>&lt;abbr&gt;</code> — Abreviação</h5>
+        <p>Usada para indicar siglas ou abreviações. O atributo <code>title</code> mostra o significado completo ao passar o mouse.</p>
+    </div>
+</body>
+</html> 
